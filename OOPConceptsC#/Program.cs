@@ -26,6 +26,25 @@ namespace OOPConcepts
             Rectangle rectangle = new Rectangle();
             rectangle.Draw();
 
+
+            //access modifiers
+            MyClass myObject = new MyClass();
+
+            myObject.publicField = 1;                   // Accessible
+                                                        // myObject.privateField = 2;              // Not accessible (private)
+                                                        // myObject.protectedField = 3;            // Not accessible (not inherited)
+            myObject.internalField = 4;                 // Accessible
+            myObject.protectedInternalField = 5;        // Accessible
+
+            myObject.PublicMethod();                    // Accessible
+                                                        // myObject.PrivateMethod();                // Not accessible (private)
+                                                        // myObject.ProtectedMethod();              // Not accessible (not inherited)
+            myObject.InternalMethod();                   // Accessible
+            myObject.ProtectedInternalMethod();          // Accessible
+
+            DerivedClass derivedObject = new DerivedClass();
+            derivedObject.AccessBaseClassMembers();
+
             Console.ReadKey();
         }
     }
