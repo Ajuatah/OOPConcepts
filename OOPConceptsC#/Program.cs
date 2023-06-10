@@ -17,6 +17,24 @@ namespace OOPConcepts
 
             // Output: Destructor called
 
+            // indexer
+            MyCollection collection = new MyCollection();
+
+            // Using the indexer to get/set values
+            collection[0] = "Value 1";
+            string value = collection[0];
+
+            Console.WriteLine("Value at index 0: " + value);  // Output: Value 1
+
+            StringCollection collection1 = new StringCollection();
+
+            collection1[0] = "First";
+            collection1[1] = "Second";
+
+            Console.WriteLine(collection1[0]);  // Output: "First"
+            Console.WriteLine(collection1[1]);  // Output: "Second"
+
+
             Console.ReadKey();
         }
     }
