@@ -53,6 +53,23 @@ namespace OOPConcepts
             rectang.IPrint();
             rectang.DrawFillColor();
 
+
+            //polymorphism
+            Shape1 shape1 = new Shape1();
+            shape1.Draw1();       // Output: "Drawing a shape"
+
+            Circle1 circle1 = new Circle1();
+            circle.Draw();      // Output: "Drawing a circle"
+
+            Rectangle1 rectangle1 = new Rectangle1();
+            rectangle.Draw();   // Output: "Drawing a rectangle"
+
+            Shape1 polymorphicCircle = new Circle1();
+            polymorphicCircle.Draw1();   // Output: "Drawing a circle"
+
+            Shape1 polymorphicRectangle = new Rectangle1();
+            polymorphicRectangle.Draw1();    // Output: "Drawing a rectangle"
+
             Console.ReadKey();
         }
     }
