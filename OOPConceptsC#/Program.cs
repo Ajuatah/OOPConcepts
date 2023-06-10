@@ -11,10 +11,20 @@ namespace OOPConcepts
     {
         static void Main(string[] args)
         {
+            //encapsolution 
             Person person = new Person();
             person.Name = "Andropov Ajebua";
             person.Age = 30;
             person.PrintInfo();
+
+
+            //Abstraction 
+            //Shape shape = new Shape(); : not posible
+            //you can not create an instance of abstract class
+             Circle circle = new Circle();
+            circle.Draw();
+            Rectangle rectangle = new Rectangle();
+            rectangle.Draw();
 
             Console.ReadKey();
         }
