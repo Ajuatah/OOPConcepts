@@ -72,7 +72,36 @@ namespace OOPConcepts
 
 
             //contructors 
+            // Default Constructor
+            constructor obj1 = new constructor();
+            Console.WriteLine("Default Constructor - Value: " + obj1.Value);    // Output: 0
 
+            // Parameterized Constructor
+            constructor obj2 = new constructor(42);
+            Console.WriteLine("Parameterized Constructor - Value: " + obj2.Value);   // Output: 42
+
+            // Copy Constructor
+            constructor obj3 = new constructor(obj2);
+            Console.WriteLine("Copy Constructor - Value: " + obj3.Value);   // Output: 42
+
+            // Static Constructor
+            // Static constructor is called automatically before any instance is created or static member is accessed
+            // Output: "Static constructor called"
+
+            // Private Constructor
+            // Uncomment the code below to see the private constructor in action
+            //constructor obj4 = new constructor("Private constructor called");
+
+
+
+            //private constructor and singleton
+
+            // Trying to create an instance using the private constructor will result in a compilation error
+            // Singleton singleton = new Singleton();
+
+            // Accessing the single instance using the public static method
+            Singleton singleton = Singleton.GetInstance();
+            singleton.DoSomething();
 
             Console.ReadKey();
         }
