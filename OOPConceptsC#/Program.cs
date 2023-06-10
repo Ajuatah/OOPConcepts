@@ -45,6 +45,14 @@ namespace OOPConcepts
             DerivedClass derivedObject = new DerivedClass();
             derivedObject.AccessBaseClassMembers();
 
+
+            //multiple inheritance through interface
+
+            Rectangel rectang = new Rectangel();
+             rectang.Draw();
+            rectang.IPrint();
+            rectang.DrawFillColor();
+
             Console.ReadKey();
         }
     }
