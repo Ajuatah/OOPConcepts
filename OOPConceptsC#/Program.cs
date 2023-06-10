@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -34,8 +35,25 @@ namespace OOPConcepts
             Console.WriteLine(collection1[0]);  // Output: "First"
             Console.WriteLine(collection1[1]);  // Output: "Second"
 
+            //even
+            Button button = new Button();
+
+            // Subscribing to the event using an event handler
+            button.Click += Button_Click;
+
+            // Raising the event
+            button.OnClick();
+            
 
             Console.ReadKey();
         }
+
+        // Event handler method
+        static void Button_Click(object sender, EventArgs e)
+        {
+            Console.WriteLine("Button clicked!");
+        }
+
+
     }
 }
