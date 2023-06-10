@@ -28,7 +28,7 @@ namespace OOPConcepts
 
 
             //access modifiers
-            MyClass myObject = new MyClass();
+            LookingAtConstructors myObject = new LookingAtConstructors();
 
             myObject.publicField = 1;                   // Accessible
                                                         // myObject.privateField = 2;              // Not accessible (private)
@@ -69,6 +69,10 @@ namespace OOPConcepts
 
             Shape1 polymorphicRectangle = new Rectangle1();
             polymorphicRectangle.Draw1();    // Output: "Drawing a rectangle"
+
+
+            //contructors 
+
 
             Console.ReadKey();
         }

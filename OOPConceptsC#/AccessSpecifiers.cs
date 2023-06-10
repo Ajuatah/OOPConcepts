@@ -1,6 +1,6 @@
 ﻿using System;
 
-public class MyClass
+public class LookingAtConstructors
 {
     public int publicField;
     private int privateField;
@@ -34,7 +34,7 @@ public class MyClass
     }
 }
 
-public class DerivedClass : MyClass
+public class DerivedClass : LookingAtConstructors
 {
     public void AccessBaseClassMembers()
     {
