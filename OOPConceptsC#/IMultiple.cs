@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 
 namespace OOPConceptsC_
 {
@@ -18,6 +19,26 @@ namespace OOPConceptsC_
      public interface IFllColor
     {
         void DrawFillColor();
+    }
+
+    public class BaseClass
+    {
+        //private string Name;
+        public string Name;
+
+        public void DrawName()
+        {
+            Console.WriteLine(  "Drawing from base class");
+        }
+    }
+
+    public class DerivedClass :BaseClass
+    {
+        public void DeriveMethod()
+        {
+            Name = "Andropov";
+            DrawName();
+        }
     }
 
     public class Rectangel:IMultiple, IShape, IFllColor
