@@ -21,10 +21,21 @@ namespace OOPConcepts
             //Abstraction 
             //Shape shape = new Shape(); : not posible
             //you can not create an instance of abstract class
-             Circle circle = new Circle();
+            Circle circle = new Circle();
             circle.Draw();
-            Rectangle rectangle = new Rectangle();
+            var rectangle = new Rectangle();
             rectangle.Draw();
+
+
+            Animal dog = new Dog("Buddy");
+            dog.DisplayInfo();  // Output: Name: Buddy
+            dog.MakeSound();    // Output: Dog: Woof woof!
+
+            Console.WriteLine();
+
+            Animal cat = new Cat("Whiskers");
+            cat.DisplayInfo();  // Output: Name: Whiskers
+            cat.MakeSound();    // Output: Cat: Meow!
 
             Console.ReadKey();
         }

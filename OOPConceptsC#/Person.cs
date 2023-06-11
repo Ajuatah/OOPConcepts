@@ -29,4 +29,45 @@ namespace OOPConceptsC_
         }
         
     }
+
+    public abstract class Animal
+    {
+        public string Name { get; set; }
+
+        public Animal(string name)
+        {
+            Name = name;
+        }
+
+        public abstract void MakeSound(); // Abstract method without implementation
+
+        public void DisplayInfo()
+        {
+            Console.WriteLine($"Name: {Name}");
+        }
+    }
+
+    public class Dog : Animal
+    {
+        public Dog(string name) : base(name)
+        {
+        }
+
+        public override void MakeSound()
+        {
+            Console.WriteLine("Dog: Woof woof!");
+        }
+    }
+
+    public class Cat : Animal
+    {
+        public Cat(string name) : base(name)
+        {
+        }
+
+        public override void MakeSound()
+        {
+            Console.WriteLine("Cat: Meow!");
+        }
+    }
 }
