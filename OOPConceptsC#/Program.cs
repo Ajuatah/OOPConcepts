@@ -20,6 +20,16 @@ namespace OOPConcepts
 
             decimal totalPrice = cart.CalculateTotalPrice();
             Console.WriteLine($"Total price: {totalPrice:C}");
+
+            //extention method
+            Car car = new Car();
+            car.PrintWheelCount();
+
+            string text = "Hello, world!";
+            foreach (string word in text.GetWords())
+            {
+                Console.WriteLine(word);
+            }
             Console.ReadKey();
         }
     }
