@@ -11,32 +11,25 @@ namespace OOPConcepts
     {
         static void Main(string[] args)
         {
-            //encapsolution 
-            Person person = new Person();
-            person.Name = "Andropov Ajebua";
-            person.Age = 30;
-            person.PrintInfo();
+            ShoppingCart cart = new ShoppingCart();
+            Item item1 = new Item { Name = "Shirt", Price = 29.99m };
+            Item item2 = new Item { Name = "Jeans", Price = 49.99m };
 
+            cart.AddItem(item1);
+            cart.AddItem(item2);
 
-            //Abstraction 
-            //Shape shape = new Shape(); : not posible
-            //you can not create an instance of abstract class
-            Circle circle = new Circle();
-            circle.Draw();
-            var rectangle = new Rectangle();
-            rectangle.Draw();
+            decimal totalPrice = cart.CalculateTotalPrice();
+            Console.WriteLine($"Total price: {totalPrice:C}");
 
+            //extention method
+            Car car = new Car();
+            car.PrintWheelCount();
 
-            Animal dog = new Dog("Buddy");
-            dog.DisplayInfo();  // Output: Name: Buddy
-            dog.MakeSound();    // Output: Dog: Woof woof!
-
-            Console.WriteLine();
-
-            Animal cat = new Cat("Whiskers");
-            cat.DisplayInfo();  // Output: Name: Whiskers
-            cat.MakeSound();    // Output: Cat: Meow!
-
+            string text = "Hello, world!";
+            foreach (string word in text.GetWords())
+            {
+                Console.WriteLine(word);
+            }
             Console.ReadKey();
         }
     }
