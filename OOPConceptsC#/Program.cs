@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -19,6 +20,7 @@ namespace OOPConcepts
         static void Main(string[] args)
         {
 
+
            
                 foreach (int number in GetEvenNumbers(10))
                 {
@@ -27,5 +29,13 @@ namespace OOPConcepts
             
             Console.ReadKey();
         }
+
+        // Event handler method
+        static void Button_Click(object sender, EventArgs e)
+        {
+            Console.WriteLine("Button clicked!");
+        }
+
+
     }
 }
