@@ -9,27 +9,22 @@ namespace OOPConcepts
 {
     public  class Program
     {
+        public static IEnumerable<int> GetEvenNumbers(int limit)
+        {
+            for (int i = 0; i < limit; i++)
+            {
+                yield return i;
+            }
+        }
         static void Main(string[] args)
         {
-            ShoppingCart cart = new ShoppingCart();
-            Item item1 = new Item { Name = "Shirt", Price = 29.99m };
-            Item item2 = new Item { Name = "Jeans", Price = 49.99m };
 
-            cart.AddItem(item1);
-            cart.AddItem(item2);
-
-            decimal totalPrice = cart.CalculateTotalPrice();
-            Console.WriteLine($"Total price: {totalPrice:C}");
-
-            //extention method
-            Car car = new Car();
-            car.PrintWheelCount();
-
-            string text = "Hello, world!";
-            foreach (string word in text.GetWords())
-            {
-                Console.WriteLine(word);
-            }
+           
+                foreach (int number in GetEvenNumbers(10))
+                {
+                    Console.WriteLine(number);
+                }
+            
             Console.ReadKey();
         }
     }
