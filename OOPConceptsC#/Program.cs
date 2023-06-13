@@ -10,41 +10,23 @@ namespace OOPConcepts
 {
     public  class Program
     {
+        public static IEnumerable<int> GetEvenNumbers(int limit)
+        {
+            for (int i = 0; i < limit; i++)
+            {
+                yield return i;
+            }
+        }
         static void Main(string[] args)
         {
-            MyResource resource = new MyResource();  // Constructor called
 
-            // The object is no longer needed and will be garbage collected at some point
 
-            // Output: Destructor called
-
-            // indexer
-            MyCollection collection = new MyCollection();
-
-            // Using the indexer to get/set values
-            collection[0] = "Value 1";
-            string value = collection[0];
-
-            Console.WriteLine("Value at index 0: " + value);  // Output: Value 1
-
-            StringCollection collection1 = new StringCollection();
-
-            collection1[0] = "First";
-            collection1[1] = "Second";
-
-            Console.WriteLine(collection1[0]);  // Output: "First"
-            Console.WriteLine(collection1[1]);  // Output: "Second"
-
-            //even
-            Button button = new Button();
-
-            // Subscribing to the event using an event handler
-            button.Click += Button_Click;
-
-            // Raising the event
-            button.OnClick();
+           
+                foreach (int number in GetEvenNumbers(10))
+                {
+                    Console.WriteLine(number);
+                }
             
-
             Console.ReadKey();
         }
 
