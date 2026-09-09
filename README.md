@@ -35,18 +35,18 @@ The project is organized by language, dividing code cleanly between foundational
 ```text
 OOPsConcept/
 │
-├── Java/
+├── C#/
 │   ├── concepts/
-│   │   ├── Encapsulation.java
-│   │   ├── Inheritance.java
-│   │   ├── Polymorphism.java
-│   │   └── Abstraction.java
+│   │   ├── Encapsulation.Cs
+│   │   ├── Inheritance.Cs
+│   │   ├── Polymorphism.Cs
+│   │   └── Abstraction.Cs
 │   └── projects/
-│       ├── 01_LibrarySystem/
-│       ├── 02_BankSystem/
-│       ├── 03_ShoppingCart/
-│       ├── 04_PayrollSystem/
-│       └── 05_ParkingLot/
+│       ├── 01_Project/
+│       ├── 02_Project/
+│       ├── 03_Project/
+│       ├── 04_Project/
+│       └── 05_Project/
 │
 ├── Python/
 │   ├── concepts/
