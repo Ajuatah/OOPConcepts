@@ -4,7 +4,7 @@ Welcome to **OOPsConcept**! This repository is a collaborative, multi-language g
 
 Whether you are a beginner learning the ropes or a developer exploring how different languages implement OOP paradigms, this repository bridges theory and practice.
 
----
+
 
 ## 🌟 Core Pillars Covered
 
@@ -26,13 +26,13 @@ To move beyond basic theory, **every language folder includes at least 5 practic
 4. **Employee Payroll System** *(Focus: Method Overriding, Abstract Classes)*
 5. **Parking Lot System** *(Focus: Composition, Object-Oriented Design Patterns)*
 
----
+
 
 ## 📂 Repository Structure
 
 The project is organized by language, dividing code cleanly between foundational concepts and full mini-projects.
 
-```text
+```
 OOPsConcept/
 │
 ├── C#/
